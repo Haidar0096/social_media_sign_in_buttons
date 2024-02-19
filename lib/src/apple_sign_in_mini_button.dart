@@ -5,7 +5,7 @@ import 'svg_icon_button.dart';
 
 /// Apple sign-in mini button.
 class AppleSignInMiniButton extends StatelessWidget {
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
   final bool autofocus;

@@ -5,7 +5,7 @@ import 'svg_icon_button.dart';
 
 /// Facebook sign-in mini button.
 class FacebookSignInMiniButton extends StatelessWidget {
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
   final bool autofocus;

@@ -5,7 +5,7 @@ import 'package:vector_graphics/vector_graphics.dart';
 /// A button that displays an SVG icon.
 class SvgIconButton extends StatelessWidget {
   final String svgVectorPath;
-  final void Function() onPressed;
+  final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
   final bool autofocus;
