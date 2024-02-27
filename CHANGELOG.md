@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.0.1 (27-2-2024)
 
-* TODO: Describe initial release.
+Initial release.

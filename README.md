@@ -1,3 +1,14 @@
 # Social media sign in package
 
-Social media sign in utilities.
+A package that contains useful UI buttons for social media sign in.
+
+The buttons are modifiable just as flutter buttons, because that's what they are under the hood.
+
+# Supported social media platforms:
+- Facebook mini button
+- Google mini button
+- Apple mini button
+- WhatsApp mini button
+
+# Contributing
+Feel free to open a PR or issue if you have any suggestions or improvements.

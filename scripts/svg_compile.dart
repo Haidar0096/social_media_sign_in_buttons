@@ -9,9 +9,9 @@ import 'dart:io';
 Future<void> main() async {
   String ps = Platform.pathSeparator;
   Directory inputDirectory = Directory(
-      '/Users/acksessionmacbook/Dev/work/flutter/packages/social_media_sign_in/assets'); // Replace with the absolute path to the directory containing the svg files
+      '/Users/acksessionmacbook/Dev/work/flutter/packages/social_media_sign_in_buttons/lib/assets/svg_vec'); // Replace with the absolute path to the directory containing the svg files
   Directory outputDirectory = Directory(
-    '/Users/acksessionmacbook/Dev/work/flutter/packages/social_media_sign_in/assets',
+    '/Users/acksessionmacbook/Dev/work/flutter/packages/social_media_sign_in_buttons/lib/assets/svg_vec',
   ); // Replace with the absolute path to the directory where you want to save the pre-compiled .svg.vec files
   // throw if the input directory does not exist or output directory does not exist
   if (!inputDirectory.existsSync()) {

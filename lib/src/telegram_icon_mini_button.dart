@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'image_paths.dart';
 import 'svg_icon_button.dart';
 
-/// Facebook sign-in mini button.
-class FacebookSignInMiniButton extends StatelessWidget {
+/// Telegram icon mini button.
+class TelegramIconMiniButton extends StatelessWidget {
   final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
@@ -16,7 +16,7 @@ class FacebookSignInMiniButton extends StatelessWidget {
   final VoidCallback? onLongPress;
   final BoxFit? iconFit;
 
-  const FacebookSignInMiniButton({
+  const TelegramIconMiniButton({
     super.key,
     required this.onPressed,
     this.style,
@@ -32,16 +32,16 @@ class FacebookSignInMiniButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SvgIconButton(
-        svgVectorPath: ImagePaths.facebookSignInButtonIcon,
-        onPressed: onPressed,
-        style: style,
-        statesController: statesController,
-        autofocus: autofocus,
-        clipBehavior: clipBehavior,
-        focusNode: focusNode,
-        onFocusChange: onFocusChange,
-        onHover: onHover,
-        onLongPress: onLongPress,
-        iconFit: iconFit,
-      );
+    svgVectorPath: ImagePaths.telegramLogoIcon,
+    onPressed: onPressed,
+    style: style,
+    statesController: statesController,
+    autofocus: autofocus,
+    clipBehavior: clipBehavior,
+    focusNode: focusNode,
+    onFocusChange: onFocusChange,
+    onHover: onHover,
+    onLongPress: onLongPress,
+    iconFit: iconFit,
+  );
 }

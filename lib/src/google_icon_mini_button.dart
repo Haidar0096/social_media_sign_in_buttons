@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'image_paths.dart';
 import 'svg_icon_button.dart';
 
-/// Google sign-in mini button.
-class GoogleSignInMiniButton extends StatelessWidget {
+/// Google icon mini button.
+class GoogleIconMiniButton extends StatelessWidget {
   final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
@@ -16,7 +16,7 @@ class GoogleSignInMiniButton extends StatelessWidget {
   final VoidCallback? onLongPress;
   final BoxFit? iconFit;
 
-  const GoogleSignInMiniButton({
+  const GoogleIconMiniButton({
     super.key,
     required this.onPressed,
     this.style,
@@ -32,7 +32,7 @@ class GoogleSignInMiniButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SvgIconButton(
-        svgVectorPath: ImagePaths.googleSignInButtonIcon,
+        svgVectorPath: ImagePaths.googleLogoIcon,
         onPressed: onPressed,
         style: style,
         statesController: statesController,

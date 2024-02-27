@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'image_paths.dart';
 import 'svg_icon_button.dart';
 
-/// Apple sign-in mini button.
-class AppleSignInMiniButton extends StatelessWidget {
+/// Whatsapp icon mini button.
+class WhatsappIconMiniButton extends StatelessWidget {
   final void Function()? onPressed;
   final ButtonStyle? style;
   final MaterialStatesController? statesController;
@@ -16,7 +16,7 @@ class AppleSignInMiniButton extends StatelessWidget {
   final VoidCallback? onLongPress;
   final BoxFit? iconFit;
 
-  const AppleSignInMiniButton({
+  const WhatsappIconMiniButton({
     super.key,
     required this.onPressed,
     this.style,
@@ -32,16 +32,16 @@ class AppleSignInMiniButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SvgIconButton(
-        svgVectorPath: ImagePaths.appleSignInButtonIcon,
-        onPressed: onPressed,
-        style: style,
-        statesController: statesController,
-        autofocus: autofocus,
-        clipBehavior: clipBehavior,
-        focusNode: focusNode,
-        onFocusChange: onFocusChange,
-        onHover: onHover,
-        onLongPress: onLongPress,
-        iconFit: iconFit,
-      );
+    svgVectorPath: ImagePaths.whatsappLogoIcon,
+    onPressed: onPressed,
+    style: style,
+    statesController: statesController,
+    autofocus: autofocus,
+    clipBehavior: clipBehavior,
+    focusNode: focusNode,
+    onFocusChange: onFocusChange,
+    onHover: onHover,
+    onLongPress: onLongPress,
+    iconFit: iconFit,
+  );
 }
