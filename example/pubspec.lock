@@ -179,11 +179,10 @@ packages:
   social_media_sign_in_buttons:
     dependency: "direct main"
     description:
-      name: social_media_sign_in_buttons
-      sha256: accaa867e430a7e511cb4bd74aff7976b50a08f876e3ed90cc0599f60033fbc3
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0"
   source_span:
     dependency: transitive
     description:

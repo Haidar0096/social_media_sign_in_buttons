@@ -35,6 +35,33 @@ class FacebookIconMiniButton extends StatelessWidget {
   /// Optional `BoxFit` for the SVG icon.
   final BoxFit? iconFit;
 
+  /// Optional width for the SVG icon.
+  final double? iconWidth;
+
+  /// Optional height for the SVG icon.
+  final double? iconHeight;
+
+  /// Optional alignment for the SVG icon.
+  final Alignment? iconAlignment;
+
+  /// Option clip behavior for the SVG icon.
+  final Clip? iconClipBehavior;
+
+  /// Optional color filter for the SVG icon.
+  final ColorFilter? iconColorFilter;
+
+  /// Determines if the SVG icon should be excluded from semantics.
+  final bool? excludeIconFromSemantics;
+
+  /// Determines if the SVG icon should match the text direction.
+  final bool? matchIconTextDirection;
+
+  /// Optional placeholder builder for the SVG icon.
+  final WidgetBuilder? iconPlaceholderBuilder;
+
+  /// Optional semantics label for the SVG icon.
+  final String? iconSemanticsLabel;
+
   const FacebookIconMiniButton({
     super.key,
     required this.onPressed,
@@ -47,6 +74,15 @@ class FacebookIconMiniButton extends StatelessWidget {
     this.onHover,
     this.onLongPress,
     this.iconFit,
+    this.iconWidth,
+    this.iconHeight,
+    this.iconAlignment,
+    this.iconClipBehavior,
+    this.iconColorFilter,
+    this.excludeIconFromSemantics,
+    this.matchIconTextDirection,
+    this.iconPlaceholderBuilder,
+    this.iconSemanticsLabel,
   });
 
   @override
@@ -62,5 +98,14 @@ class FacebookIconMiniButton extends StatelessWidget {
         onHover: onHover,
         onLongPress: onLongPress,
         iconFit: iconFit,
+        iconWidth: iconWidth,
+        iconHeight: iconHeight,
+        iconAlignment: iconAlignment,
+        iconClipBehavior: iconClipBehavior,
+        iconColorFilter: iconColorFilter,
+        excludeIconFromSemantics: excludeIconFromSemantics,
+        matchIconTextDirection: matchIconTextDirection,
+        iconPlaceholderBuilder: iconPlaceholderBuilder,
+        iconSemanticsLabel: iconSemanticsLabel,
       );
 }

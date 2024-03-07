@@ -1,6 +1,6 @@
 name: social_media_sign_in_buttons
 description: "This package provides customizable social media sign-in buttons. It supports Apple, Facebook, Google, etc. Ideal for Flutter projects requiring social media authentication."
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/Haidar0096/social_media_sign_in_buttons
 repository: https://github.com/Haidar0096/social_media_sign_in_buttons.git
 

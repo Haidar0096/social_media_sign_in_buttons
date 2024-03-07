@@ -37,6 +37,33 @@ class SvgIconButton extends StatelessWidget {
   /// Optional `BoxFit` for the SVG icon.
   final BoxFit? iconFit;
 
+  /// Optional width for the SVG icon.
+  final double? iconWidth;
+
+  /// Optional height for the SVG icon.
+  final double? iconHeight;
+
+  /// Optional alignment for the SVG icon.
+  final Alignment? iconAlignment;
+
+  /// Option clip behavior for the SVG icon.
+  final Clip? iconClipBehavior;
+
+  /// Optional color filter for the SVG icon.
+  final ColorFilter? iconColorFilter;
+
+  /// Determines if the SVG icon should be excluded from semantics.
+  final bool? excludeIconFromSemantics;
+
+  /// Determines if the SVG icon should match the text direction.
+  final bool? matchIconTextDirection;
+
+  /// Optional placeholder builder for the SVG icon.
+  final WidgetBuilder? iconPlaceholderBuilder;
+
+  /// Optional semantics label for the SVG icon.
+  final String? iconSemanticsLabel;
+
   const SvgIconButton({
     super.key,
     required this.svgVectorPath,
@@ -50,6 +77,15 @@ class SvgIconButton extends StatelessWidget {
     this.onHover,
     this.onLongPress,
     this.iconFit,
+    this.iconWidth,
+    this.iconHeight,
+    this.iconAlignment,
+    this.iconClipBehavior,
+    this.iconColorFilter,
+    this.excludeIconFromSemantics,
+    this.matchIconTextDirection,
+    this.iconPlaceholderBuilder,
+    this.iconSemanticsLabel,
   });
 
   @override
@@ -63,9 +99,21 @@ class SvgIconButton extends StatelessWidget {
         onFocusChange: onFocusChange,
         onHover: onHover,
         onLongPress: onLongPress,
-        child: SvgPicture(
-          AssetBytesLoader(svgVectorPath),
-          fit: iconFit ?? BoxFit.contain,
+        child: SizedBox(
+          width: iconWidth,
+          height: iconHeight,
+          child: SvgPicture(
+            alignment: iconAlignment ?? Alignment.center,
+            clipBehavior: iconClipBehavior ?? Clip.hardEdge,
+            colorFilter: iconColorFilter,
+            excludeFromSemantics: excludeIconFromSemantics ?? false,
+            matchTextDirection: matchIconTextDirection ?? false,
+            placeholderBuilder: iconPlaceholderBuilder,
+            semanticsLabel: iconSemanticsLabel,
+            allowDrawingOutsideViewBox: true,
+            AssetBytesLoader(svgVectorPath),
+            fit: iconFit ?? BoxFit.contain,
+          ),
         ),
       );
 }

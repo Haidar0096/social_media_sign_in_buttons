@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Social Media Sign In Buttons Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -44,42 +45,54 @@ class MyHomePage extends StatelessWidget {
     fixedSize: MaterialStatePropertyAll(Size(100, 100)),
   );
 
+  final double iconSide = 50;
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           title: Text(title),
         ),
-        body: Builder(
-          builder: (context) => Center(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                GoogleIconMiniButton(
-                  style: buttonStyle,
-                  onPressed: () => print('Google'),
-                ),
-                _horizontalSpace(),
-                FacebookIconMiniButton(
-                  style: buttonStyle,
-                  onPressed: () => print('Facebook'),
-                ),
-                _horizontalSpace(),
-                AppleIconMiniButton(
-                  style: buttonStyle,
-                  onPressed: () => print('Apple'),
-                ),
-                _horizontalSpace(),
-                WhatsappIconMiniButton(
-                  style: buttonStyle,
-                  onPressed: () => print('Whatsapp'),
-                ),
-                _horizontalSpace(),
-                TelegramIconMiniButton(
-                  style: buttonStyle,
-                  onPressed: () => print('Telegram'),
-                ),
-              ],
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  GoogleIconMiniButton(
+                    iconWidth: iconSide,
+                    iconHeight: iconSide,
+                    style: buttonStyle,
+                    onPressed: () => print('Google'),
+                  ),
+                  _horizontalSpace(),
+                  FacebookIconMiniButton(
+                    iconWidth: iconSide,
+                    iconHeight: iconSide,
+                    style: buttonStyle,
+                    onPressed: () => print('Facebook'),
+                  ),
+                  _horizontalSpace(),
+                  AppleIconMiniButton(
+                    iconWidth: iconSide,
+                    iconHeight: iconSide,
+                    style: buttonStyle,
+                    onPressed: () => print('Apple'),
+                  ),
+                  _horizontalSpace(),
+                  WhatsappIconMiniButton(
+                    style: buttonStyle,
+                    onPressed: () => print('Whatsapp'),
+                  ),
+                  _horizontalSpace(),
+                  TelegramIconMiniButton(
+                    style: buttonStyle,
+                    onPressed: () => print('Telegram'),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
