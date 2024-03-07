@@ -10,5 +10,8 @@ The buttons are modifiable just as flutter buttons, because that's what they are
 - Apple mini button
 - WhatsApp mini button
 
+# Screenshots
+![Screenshot](https://github.com/Haidar0096/social_media_sign_in_buttons/blob/master/screenshots/s1.png)
+
 # Contributing
 Feel free to open a PR or issue if you have any suggestions or improvements.
