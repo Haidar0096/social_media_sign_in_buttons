@@ -56,7 +56,6 @@ class MyHomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 GoogleIconMiniButton(
-                  iconFit: BoxFit.fill,
                   style: buttonStyle,
                   onPressed: () => print('Google'),
                 ),
